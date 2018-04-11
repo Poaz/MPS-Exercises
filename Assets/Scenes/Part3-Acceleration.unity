@@ -241,6 +241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67c35c2db659da4eac3c24cb015021c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocity1: {x: 0, y: 0, z: 0}
+  velocity2: {x: 0, y: 0, z: 0}
+  sphere1: {fileID: 1502938266}
+  sphere2: {fileID: 1751400554}
 --- !u!1 &1088009682
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae663db8f16c3724f96a9f589ef129ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prev: {x: 0, y: 0, z: 0}
+  current: {x: 0, y: 0, z: 0}
 --- !u!1 &1751400549
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 160602cee78a1e043a1873232305b09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prev: {x: 0, y: 0, z: 0}
+  current: {x: 0, y: 0, z: 0}
 --- !u!1 &1862806133
 GameObject:
   m_ObjectHideFlags: 0

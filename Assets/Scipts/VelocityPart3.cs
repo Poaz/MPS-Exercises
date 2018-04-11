@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
-{
-    public Vector3 velocity;
+public class VelocityPart3 : MonoBehaviour {
+
+    public Vector3 velocity1, velocity2;
+    public RandomAcc sphere1;
+    public ConstAcc sphere2;
 
     //Using fixedupdate as it is the physics update.
     void FixedUpdate()
     {
-        //creating a vector called prev that hold the "prev" location.
-        var prev = transform.position;
-        //updates the position with the velocity. 0.1f in x direction.
-        transform.position = transform.position + new Vector3(0.1f, 0, 0);
-
         //calculates velocity from prev location to current location.
-        velocity=Velocity(prev, transform.position);
+        velocity1 = Velocity(sphere1.prev, sphere1.current);
+        velocity2 = Velocity(sphere2.prev, sphere2.current);
     }
 
     //method for calculating the velocity.
